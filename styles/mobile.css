@@ -1,3 +1,4 @@
+/* Variables CSS */
 :root{
   font-size: 62.5%;
   font-family: "Kumbh Sans", sans-serif;
@@ -22,7 +23,7 @@
   --regular-font-weigth: 400;
   --hligth-font-weigth: 700;
 }
-
+/* Reset default styles */
 *,
 *::after,
 *::before {
@@ -30,10 +31,17 @@
   margin: 0;
   padding: 0;
 }
+/* Bg for card */
 body {
+  background-image: url(../images/bg-pattern-top.svg), 
+  url(../images/bg-pattern-bottom.svg);
+  background-position: bottom 228px right 121px,
+  top 173px left 167px;
+  background-repeat: no-repeat;
   background-color: var(--bg-color);
 }
 
+/* Profile Card Component */
 /* Card Sizing */
 .prof-card-container {
   display: flex;
@@ -104,7 +112,7 @@ body {
   justify-content: space-around;
   width: 100%;
   height: calc(var(--card-height) - var(--card-smedia-height));
-  border-top: 1px solid var(--other-color);
+  /* border-top: 1px solid var(--other-color); */
 }
 .main--smedia .smedia__counter {
   width: 25%;
@@ -123,6 +131,19 @@ body {
 .attribution {
   width: 100%;
   text-align: center;
+}
+
+/* Desktop Media Query */
+@media (min-width: 1024px) {
+  /* Modify width of card just a notch */
+  .prof-card {
+    min-width: var(--card-desk-width);  
+  }
+  /* Reposition bg svg circles */
+  body {
+    background-position: bottom -127% right 168%, 
+    top -133% left 164%;
+  }
 }
 
 
