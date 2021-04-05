@@ -1,0 +1,25 @@
+:root{
+  font-size: 62.5%;
+  font-family: "Kumbh Sans", sans-serif;
+  --mobile-width: 375px;
+  --desk-width: 1440px;
+  --main-text-color:hsl(229, 23%, 23%);
+  --bg-color: hsl(185, 75%, 39%);
+  --sec-text-color:hsl(227, 10%, 46%);
+  --other-color:hsl(0, 0%, 59%);
+  --main-font-size: 1.8rem;
+  --regular-font-weigth: 400;
+  --hligth-font-weigth: 700;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+background-color: var(--other-color);
+  
+}

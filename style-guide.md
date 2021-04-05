@@ -1,5 +1,13 @@
 # Front-end Style Guide
 
+## Components Dimensions
+- Property: Mobile Desktop
+- Width: 330px 350px
+- Heigth: 375px 375px
+- BG Heigth: 140px
+- BG Heigth bottom:  235px 
+- Portrait: 100px 100px
+
 ## Layout
 
 The designs were created to the following widths:
