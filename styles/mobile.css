@@ -8,13 +8,16 @@
   --card-bg-color: white;
   --card-pic-height: 100px;
   --card-pic-width: 100px;
+
   --mobile-width: 375px;
   --desk-width: 1440px;
+
   --main-text-color:hsl(229, 23%, 23%);
   --bg-color: hsl(185, 75%, 39%);
   --sec-text-color:hsl(227, 10%, 46%);
   --other-color:hsl(0, 0%, 59%);
   --main-font-size: 1.8rem;
+  --sec-font-size: 1.3rem;
   --regular-font-weigth: 400;
   --hligth-font-weigth: 700;
 
@@ -74,7 +77,24 @@ body {
   background: url(../images/image-victor.jpg) no-repeat;
   background-size: cover;
 }
-
+/* .prof-card name */
+.prof-card__main .main--name {
+  width: 100%;
+  color: var(--main-text-color);
+  font-size: var(--main-font-size);
+  font-weight: var(--hligth-font-weigth);
+}
+.prof-card__main .main--name span {
+  margin-left: 0.5rem;
+  color: var(--sec-text-color);
+  font-weight: var(--regular-font-weigth);
+}
+.prof-card__main .main--name p:nth-of-type(2) {
+  margin-top: 1.2rem;
+  font-size: var(--sec-font-size);
+  color: var(--sec-text-color);
+  font-weight: var(--regular-font-weigth);
+}
 /* Other things */
 .attribution {
   width: 100%;
