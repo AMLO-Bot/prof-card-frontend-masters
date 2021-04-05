@@ -8,6 +8,7 @@
   --card-bg-color: white;
   --card-pic-height: 100px;
   --card-pic-width: 100px;
+  --card-smedia-height: 285px;
 
   --mobile-width: 375px;
   --desk-width: 1440px;
@@ -20,7 +21,6 @@
   --sec-font-size: 1.3rem;
   --regular-font-weigth: 400;
   --hligth-font-weigth: 700;
-
 }
 
 *,
@@ -49,7 +49,7 @@ body {
   align-items: center;
   flex-flow: row wrap;
   margin: auto;
-  width: var(--card-mobile-width);
+  min-width: var(--card-mobile-width);
   height: var(--card-height);
   text-align: center;
 }
@@ -80,6 +80,7 @@ body {
 /* .prof-card name */
 .prof-card__main .main--name {
   width: 100%;
+  margin: -25px 0px 20px 0px;
   color: var(--main-text-color);
   font-size: var(--main-font-size);
   font-weight: var(--hligth-font-weigth);
@@ -95,8 +96,33 @@ body {
   color: var(--sec-text-color);
   font-weight: var(--regular-font-weigth);
 }
+/* smedia counter */
+.main--smedia {
+  display: flex;
+  flex-flow: wrap row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: calc(var(--card-height) - var(--card-smedia-height));
+  border-top: 1px solid var(--other-color);
+}
+.main--smedia .smedia__counter {
+  width: 25%;
+}
+.smedia__counter .counter--num {
+  margin-bottom: 0.7rem;
+  color: var(--main-text-color);
+  font-size: var(--sec-font-size);
+  font-weight: var(--hligth-font-weigth);
+}
+.smedia__counter .counter--type {
+  color: var(--sec-text-color);
+  letter-spacing: 0.1rem;
+}
 /* Other things */
 .attribution {
   width: 100%;
   text-align: center;
 }
+
+
