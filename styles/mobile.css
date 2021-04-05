@@ -1,6 +1,13 @@
 :root{
   font-size: 62.5%;
   font-family: "Kumbh Sans", sans-serif;
+  --card-mobile-width: 330px;
+  --card-desk-width: 350px;
+  --card-height: 375px;
+  --card-bg-height: 140px;
+  --card-bg-color: white;
+  --card-pic-height: 100px;
+  --card-pic-width: 100px;
   --mobile-width: 375px;
   --desk-width: 1440px;
   --main-text-color:hsl(229, 23%, 23%);
@@ -10,6 +17,7 @@
   --main-font-size: 1.8rem;
   --regular-font-weigth: 400;
   --hligth-font-weigth: 700;
+
 }
 
 *,
@@ -20,6 +28,55 @@
   padding: 0;
 }
 body {
-background-color: var(--other-color);
-  
+  background-color: var(--bg-color);
+}
+
+/* Card Sizing */
+.prof-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  height: 90vh;
+}
+
+.prof-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin: auto;
+  width: var(--card-mobile-width);
+  height: var(--card-height);
+  text-align: center;
+}
+/* .prof-card parts */
+.prof-card__bg {
+  width: 100%;
+  height: var(--card-bg-height);
+  border-radius: 10px 10px 0px 0px;
+  background: url(../images/bg-pattern-card.svg);
+}
+.prof-card__main {
+  width: 100%;
+  height: calc(var(--card-height) - var(--card-bg-height));
+  border-radius: 0px 0px 10px 10px;
+  background-color: var(--card-bg-color);
+}
+.prof-card__main .main--pic figure{
+  display: inline-block;
+  position: relative;
+  bottom: 5.0rem;
+  width: var(--card-pic-width);
+  height: var(--card-pic-height);
+  border: 3px solid var(--card-bg-color);
+  border-radius: 50%;
+  background: url(../images/image-victor.jpg) no-repeat;
+  background-size: cover;
+}
+
+/* Other things */
+.attribution {
+  width: 100%;
+  text-align: center;
 }
